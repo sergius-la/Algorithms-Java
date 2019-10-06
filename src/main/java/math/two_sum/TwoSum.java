@@ -9,7 +9,7 @@ public class TwoSum {
      * of elements in the array that sums to exactly k. For example, given the array [1, 3, 7] and
      * k = 8, the answer is “yes,” but given k = 6 the answer is “no.”
     * */
-    public boolean isPresent(ArrayList<Integer> numbers, int target) {
+    public boolean isPresentBruteForce(ArrayList<Integer> numbers, int target) {
         for (int i = 0; i < numbers.size(); i++) {
             for (int j = i; j < numbers.size(); j++) {
                 if (numbers.get(i) + numbers.get(j) == target) {
