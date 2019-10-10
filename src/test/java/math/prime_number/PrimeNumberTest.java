@@ -1,6 +1,5 @@
 package math.prime_number;
 
-import math.two_sum.TwoSum;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -32,10 +31,10 @@ public class PrimeNumberTest {
         return testData;
     }
 
-    @Test(dataProvider = "is-present")
-    public static void isPresentTest(ArrayList<Integer> numbers, int target, boolean expectedResult) {
-        System.out.println(String.format("Numbers - <%s>", numbers));
-        System.out.println(String.format("Target - <%d>", target));
-//        assertEquals(twoSum.isPresentBruteForce(numbers, target), expectedResult);
+    @Test(dataProvider = "is-prime")
+    public static void isPrimeTest(int number, boolean expectedResult) {
+        System.out.println(String.format("Number - <%d>", number));
+        System.out.println(String.format("Expected result - <%s>", expectedResult));
+        assertEquals(primeNumber.isPrime(number), expectedResult);
     }
 }
