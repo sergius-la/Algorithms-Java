@@ -21,9 +21,16 @@ public class TwoSumTest {
     }
 
     @Test(dataProvider = "is-present")
-    public static void isPresentTest(ArrayList<Integer> numbers, int target, boolean expectedResult) {
+    public static void isPresentBruteForceTest(ArrayList<Integer> numbers, int target, boolean expectedResult) {
         System.out.println(String.format("Numbers - <%s>", numbers));
         System.out.println(String.format("Target - <%d>", target));
         assertEquals(twoSum.isPresentBruteForce(numbers, target), expectedResult);
+    }
+
+    @Test(dataProvider = "is-present")
+    public static void isPresentMapTest(ArrayList<Integer> numbers, int target, boolean expectedResult) {
+        System.out.println(String.format("Numbers - <%s>", numbers));
+        System.out.println(String.format("Target - <%d>", target));
+        assertEquals(twoSum.isPresentMap(numbers, target), expectedResult);
     }
 }
