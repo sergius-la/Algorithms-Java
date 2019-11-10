@@ -2,12 +2,14 @@ package arrays.merge;
 
 import java.util.ArrayDeque;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Queue;
 
 public class MergeSortedArrays {
 
-    public ArrayList<Integer> merge(ArrayList arrOne, ArrayList arrTwo) {
+    /**
+     * Merge sorted arrays with with Queue
+    * */
+    public ArrayList<Integer> mergeQueue(ArrayList arrOne, ArrayList arrTwo) {
         ArrayList<Integer> result = new ArrayList<Integer>();
 
         Queue<Integer> queueOne = new ArrayDeque<Integer>();
@@ -32,5 +34,37 @@ public class MergeSortedArrays {
         }
 
         return result;
-        }
     }
+
+    /**
+     * Merge sorted arrays
+    * */
+    public int[] mergeArray(int[] a, int[] b) {
+        int[] result = new int[a.length + b.length];
+        int aIdx = 0, bIdx = 0, resIdx = 0;
+        while (aIdx < a.length - 1 || bIdx < b.length - 1) {
+            if (a[aIdx] < b[bIdx]) {
+                result[resIdx] = a[aIdx];
+                resIdx++;
+                aIdx++;
+            } else {
+                result[resIdx] = b[bIdx];
+                resIdx++;
+                bIdx++;
+            }
+        }
+
+        while (aIdx < a.length) {
+            result[resIdx] = a[aIdx];
+            resIdx++;
+            aIdx++;
+        }
+
+        while (bIdx < b.length) {
+            result[resIdx] = b[bIdx];
+            resIdx++;
+            bIdx++;
+        }
+        return result;
+    }
+}
