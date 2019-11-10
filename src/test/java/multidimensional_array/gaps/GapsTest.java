@@ -1,4 +1,4 @@
-package arrays.gaps;
+package multidimensional_array.gaps;
 
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;

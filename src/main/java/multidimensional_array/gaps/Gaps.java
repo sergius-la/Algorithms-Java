@@ -1,4 +1,4 @@
-package arrays.gaps;
+package multidimensional_array.gaps;
 
 public class Gaps {
 
