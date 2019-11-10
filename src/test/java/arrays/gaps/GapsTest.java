@@ -15,7 +15,9 @@ public class GapsTest {
         return new Object[][] {
                 {new int[][] {{1, 2}, {2, 10}, {10, 15}}, false},
                 {new int[][] {{1, 2}, {5, 10}, {10, 15}}, true},
-                {new int[][] {{1, 2}, {5, 10}, {18, 15}}, true}
+                {new int[][] {{1, 2}, {5, 10}, {18, 15}}, true},
+                {new int[][] {{1, 2}, {5, 10}}, true},
+                {new int[][] {{1, 2}, {2, 10}}, false}
         };
     }
 

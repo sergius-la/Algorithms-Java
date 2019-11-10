@@ -8,7 +8,7 @@ public class Gaps {
      * [1, 2] [5, 10] [10, 15] - true
     * */
     public boolean hasGap(int[][] n) {
-       for (int i = 0; i < n.length - 2; i++) {
+       for (int i = 0; i < n.length - 1; i++) {
            if (n[i+1][0] > n[i][1]) {
                return true;
            }
