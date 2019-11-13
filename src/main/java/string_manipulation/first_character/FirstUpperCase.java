@@ -1,4 +1,4 @@
-package string_manipulation.first_uppercase;
+package string_manipulation.first_character;
 
 /**
 * Giving a String. Return first uppercase letter in the String.

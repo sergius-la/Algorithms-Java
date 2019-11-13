@@ -1,8 +1,7 @@
-package string_manipulation.first_uppercase;
+package string_manipulation.first_character;
 
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-import string_manipulation.balanced_parentheses.BalancedParentheses;
 
 import static org.testng.Assert.assertEquals;
 
