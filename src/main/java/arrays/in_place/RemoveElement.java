@@ -1,5 +1,7 @@
 package arrays.in_place;
 
+import java.util.HashMap;
+
 public class RemoveElement {
     /**
      *
@@ -20,6 +22,14 @@ public class RemoveElement {
             if (nums[i] != val) {
                 nums[resIndex] = nums[i];
                 resIndex++;
+            }
+        }
+
+        HashMap<Character, Integer> rest = new HashMap<>();
+        int res = Integer.MAX_VALUE;
+        for (int i: rest.values()) {
+            if (i != -1 && i < res) {
+                res = i;
             }
         }
         return resIndex;
