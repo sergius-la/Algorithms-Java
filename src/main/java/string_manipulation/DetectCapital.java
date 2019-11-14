@@ -1,16 +1,6 @@
 package string_manipulation;
 
-import org.testng.Assert;
-
 public class DetectCapital {
-
-    public static void main(String[] args) {
-        DetectCapital detectCapital = new DetectCapital();
-        Assert.assertEquals(detectCapital.detectCapitalUse("USA"), true);
-        Assert.assertEquals(detectCapital.detectCapitalUse("FlaG"), false);
-        Assert.assertEquals(detectCapital.detectCapitalUse("leetcode"), true);
-        Assert.assertEquals(detectCapital.detectCapitalUse("Leetcode"), true);
-    }
 
     /**
      * Given a word, you need to judge whether the usage of capitals in it is right or not.
