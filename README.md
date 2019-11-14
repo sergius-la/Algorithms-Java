@@ -2,4 +2,4 @@
 
 ## String Manipulation
 
-- Detect Capital - [**`Java`**](string_manipulation.DetectCapital)
+- Detect Capital - [**`Java`**](/src/main/java/string_manipulation/DetectCapital.java)
