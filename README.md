@@ -4,6 +4,18 @@
 
 - Detect Capital - [**`Java`**](/src/main/java/string_manipulation/DetectCapital.java)
 
+## Search
+
+### Numbers
+
+- Binary Search - [**`Java`**](/src/main/java/search/numbers/BinarySearch.java)
+
+## Sort
+
+- Numbers
+
+- Quick Sort - [**`Java`**](/src/main/java/sorting/numbers/QuickSort.java)
+
 ## Arrays
 
 ### In place
