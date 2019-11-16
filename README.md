@@ -12,7 +12,7 @@
 
 ## Sort
 
-- Numbers
+### Numbers
 
 - Quick Sort - [**`Java`**](/src/main/java/sorting/numbers/QuickSort.java)
 
