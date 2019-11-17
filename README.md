@@ -30,6 +30,10 @@
 
 - Merge sorted arrays - [**`Java`**](/src/main/java/arrays/merge/MergeSortedArrays.java)
 
+## Multidimensional Array
+
+- Gap - [**`Java`**](/src/main/java/multidimensional_array/gaps/Gaps.java)
+
 ## Lists
 
 ### Merge
