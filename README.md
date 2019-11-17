@@ -1,5 +1,11 @@
 # Algorithms
 
+## Math
+
+### Geometry
+
+- Closets Points to Origin - [**`Java`**](/src/main/java/math/geometry/KClosestPointsToOrigin.java)
+
 ## String Manipulation
 
 - Detect Capital - [**`Java`**](/src/main/java/string_manipulation/DetectCapital.java)
