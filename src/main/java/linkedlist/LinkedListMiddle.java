@@ -15,13 +15,17 @@ public class LinkedListMiddle {
          * space O(1)
         * */
         public ListNode middleNode(ListNode head) {
+            // Pointers from head
             ListNode slow = head;
             ListNode fast = head;
 
+            // Check for null head
+            // Exit at the end of list
             while (fast != null && fast.next != null) {
                 slow = slow.next;
                 fast = fast.next.next;
             }
+            // Slow pointer will be in the middle
             return slow;
         }
     }
