@@ -47,11 +47,11 @@ public class LinkedListCycleTest {
     private void unitTestFive() {
         ListNode xOne = new ListNode(1);
         ListNode xTwo = new ListNode(1);
-        ListNode xFree = new ListNode(1);
+        ListNode xThree = new ListNode(1);
         ListNode xFour = new ListNode(1);
         xOne.next = xTwo;
-        xTwo.next = xFree;
-        xFree.next = xFour;
+        xTwo.next = xThree;
+        xThree.next = xFour;
 
         Assert.assertFalse(solution.hasCycle(xOne));
     }

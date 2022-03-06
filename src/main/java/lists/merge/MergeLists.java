@@ -1,5 +1,7 @@
 package lists.merge;
 
+import linkedlist.ListNode;
+
 import java.util.PriorityQueue;
 
 public class MergeLists {
