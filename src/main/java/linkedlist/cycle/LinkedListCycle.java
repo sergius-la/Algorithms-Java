@@ -10,6 +10,11 @@ public class LinkedListCycle {
      * Tests: LinkedListCycleTest
     * */
     public static class Solution {
+
+        /**
+         * time O(n)
+         * space O(1)
+        * */
         public boolean hasCycle(ListNode head) {
             if (head == null) return false;
             if (head.next == null) return false;
